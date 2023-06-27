@@ -60,7 +60,7 @@
     var textureLoader = new THREE.TextureLoader();  
     var texture = textureLoader.load("cit.png");
     var material_b = new THREE.MeshPhongMaterial();
-    material_b.map = texture;
+    mat.map = texture;
 
     //頭を作成
     var head_g = new THREE.SphereGeometry( 0.8, 32, 32 );
