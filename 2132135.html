@@ -56,76 +56,72 @@
     plane.position.set(0,0,0);
     scene.add(plane);
 
-    // テクスチャー読み込み
-    var textureLoader = new THREE.TextureLoader();  
-    var texture = textureLoader.load("cit.png");
-    var mat = new THREE.SpherePhongMaterial();
-    mat.map = texture;
+  
 
     //頭を作成
     var head_g = new THREE.SphereGeometry( 0.8, 32, 32 );
-    //var material_b = new THREE.MeshPhongMaterial({ color: 0xffffff });
+    var material_b = new THREE.MeshPhongMaterial({ color: 0xffffff });
     var head = new THREE.Mesh(head_g, material_b);
     head.position.set(0,1.2,0);
 
     //体を作成
     var body_g = new THREE.SphereGeometry( 0.9, 32, 32 );
-    //var material_r = new THREE.MeshPhongMaterial({ color: 0xffffff });
+    var material_r = new THREE.MeshPhongMaterial({ color: 0xffffff });
     var body = new THREE.Mesh( body_g, material_r);
     body.position.set(0,-0.15,0);
 
     //ボタン
     var button_g = new THREE.SphereGeometry(0.09,32,32);
-    //var material_button = new THREE.MeshPhongMaterial({ color: 0x000000 });
+    var material_button = new THREE.MeshPhongMaterial({ color: 0x000000 });
     var button = new THREE.Mesh( button_g, material_button);
     button.position.set(0,-0.25,0.85);
 
     //ボタン2
     var button2_g = new THREE.SphereGeometry(0.09,32,32);
-    //var material_button2 = new THREE.MeshPhongMaterial({ color: 0x000000 });
+    var material_button2 = new THREE.MeshPhongMaterial({ color: 0x000000 });
     var button2 = new THREE.Mesh( button2_g, material_button2);
     button2.position.set(0,0.2,0.79);
 
     //口
     var mouth_g = new THREE.SphereGeometry(0.05,32,32);
-    //var material_mouth = new THREE.MeshPhongMaterial({ color: 0x000000 });
+    var material_mouth = new THREE.MeshPhongMaterial({ color: 0x000000 });
     var mouth = new THREE.Mesh( mouth_g, material_mouth);
     mouth.position.set(0.2,0.95,0.7);
 
     //口2
     var mouth2_g = new THREE.SphereGeometry(0.05,32,32);
-    //var material_mouth2 = new THREE.MeshPhongMaterial({ color: 0x000000 });
+    var material_mouth2 = new THREE.MeshPhongMaterial({ color: 0x000000 });
     var mouth2 = new THREE.Mesh( mouth2_g, material_mouth2);
     mouth2.position.set(0.4,1.12,0.68);
 
     //口3
     var mouth3_g = new THREE.SphereGeometry(0.05,32,32);
-    //var material_mouth3 = new THREE.MeshPhongMaterial({ color: 0x000000 });
+    var material_mouth3 = new THREE.MeshPhongMaterial({ color: 0x000000 });
     var mouth3 = new THREE.Mesh( mouth3_g, material_mouth3);
     mouth3.position.set(-0.2,0.95,0.77);
 
     //口4
     var mouth4_g = new THREE.SphereGeometry(0.05,32,32);
-    //var material_mouth4 = new THREE.MeshPhongMaterial({ color: 0x000000 });
+    var material_mouth4 = new THREE.MeshPhongMaterial({ color: 0x000000 });
     var mouth4 = new THREE.Mesh( mouth4_g, material_mouth4);
     mouth4.position.set(-0.4,1.12,0.67);
 
     //口5
     var mouth5_g = new THREE.SphereGeometry(0.05,32,32);
-    //var material_mouth5 = new THREE.MeshPhongMaterial({ color: 0x000000 });
+    var material_mouth5 = new THREE.MeshPhongMaterial({ color: 0x000000 });
     var mouth5 = new THREE.Mesh( mouth5_g, material_mouth5);
     mouth5.position.set(0,0.9,0.8);
 
     //鼻
     var nose_g = new THREE.ConeGeometry( 0.1, 0.5, 32 );
-    //var material_nose = new THREE.MeshPhongMaterial({ color: 0xff8c00 });
+    var material_nose = new THREE.MeshPhongMaterial({ color: 0xff8c00 });
     var nose = new THREE.Mesh( nose_g, material_nose);
     nose.rotation.x = 1.5;
     nose.position.set(0,1.35,0.95);
 
     //左目
     var eye_g = new THREE.SphereGeometry( 0.1, 32, 32 );
-    //var material_eye = new THREE.MeshPhongMaterial({ color: 0x000000 });
+    var material_eye = new THREE.MeshPhongMaterial({ color: 0x000000 });
     var l_eye = new THREE.Mesh( eye_g, material_eye);
     l_eye.position.set(0.35,1.5,0.6);
 
