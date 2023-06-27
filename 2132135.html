@@ -56,7 +56,11 @@
     plane.position.set(0,0,0);
     scene.add(plane);
 
-  
+    // テクスチャー読み込み
+    var textureLoader = new THREE.TextureLoader();  
+    var texture = textureLoader.load("cit.png");
+    var mat = new THREE.MeshPhongMaterial();
+    mat.map = texture;
 
     //頭を作成
     var head_g = new THREE.SphereGeometry( 0.8, 32, 32 );
