@@ -59,13 +59,13 @@
     // テクスチャー読み込み
     var textureLoader = new THREE.TextureLoader();  
     var texture = textureLoader.load("cit.png");
-    var material_b = new THREE.MeshPhongMaterial();
+    var mat = new THREE.MeshPhongMaterial();
     mat.map = texture;
 
     //頭を作成
     var head_g = new THREE.SphereGeometry( 0.8, 32, 32 );
     var material_b = new THREE.MeshPhongMaterial({ color: 0xffffff });
-    var head = new THREE.Mesh(head_g, material_b);
+    var head = new THREE.Mesh(head_g, mat);
     head.position.set(0,1.2,0);
 
     //体を作成
