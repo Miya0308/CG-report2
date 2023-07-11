@@ -53,7 +53,7 @@
         const star = new THREE.Mesh(geometry, mat);
 
         for (let i = 0; i < 1000; i++) {
-          const mesh = new THREE.Mesh(geometry, star);
+          const mesh = new THREE.Mesh(geometry, material);
           mesh.position.x = (Math.random() - 0.5) * 2000;
           mesh.position.y = (Math.random() - 0.5) * 2000;
           mesh.position.z = (Math.random() - 0.5) * 2000;
