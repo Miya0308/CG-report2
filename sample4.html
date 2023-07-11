@@ -135,15 +135,6 @@
         snowman.position.set(0,1,0);//雪だるまグループの原点の位置
         scene.add(snowman);
 
-        update();
-
-        // 毎フレーム時に実行されるループイベントです
-        function update() {
-        // レンダリング
-        renderer.render(scene, camera);
-        requestAnimationFrame(update);
-        }
-
         // グループを作成
         const group = new THREE.Group();
         scene.add(group);
